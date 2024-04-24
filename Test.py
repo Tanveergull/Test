@@ -1,3 +1,5 @@
+#How to check type of string
+
 phrase="Hello, World"
 type_id=type(phrase)
 print(type_id)
@@ -5,26 +7,33 @@ name="123"
 type_name=type(name)
 print(type_name)
 
+#How to join the strings
+
 string1= 'hello, world'
 string2="1234"
 string3="we're #1!"
 string4='isaidPutitoverbythellama'
 print(string1.upper()+"/"+string2+"/" +string3+"/"+string4.lower())
 print(string2)
-len_id=len(string4)
+len_id=len(string4) #How to check length of string
 print(len_id)
+
+#Alingment of string 
 
 string5= "cat   "
 print(string5.lstrip())   # by this you can remove space  from left
 print(string5.strip())  # by this you can remove space from both side
 print(string5.rstrip())  # by this you can remove space from right side
 
+#How to make calendar in python
 import calendar
 yy= 2024
 mm=4
 print(calendar.month(yy,mm))
 
-'''import random
+#Password generator in python
+
+import random
 lower="abcdefghijklmnopqrstuvwxyz"
 upper="ABCDEFGHIJKLMNOPQRTSUVWXYZ"
 numbers="0123456789"
@@ -34,17 +43,18 @@ length=int(input("Enter a length: "))
 password=''.join(random.sample(all_chars,length))
 print("Generated Password:",password)'''
 
-#Use of if and else fucntion#
+#Use of if elif and else fucntion#
+
 myname="don"
 if myname=="don" :
     print("Yes the name is correct ")
     print("Correct name")
 else:print("NO invalid name")
 
-'''Value=int(input("Type a number between 1 and 10:"))
+Value=int(input("Type a number between 1 and 10:"))
 if (Value >0) and (Value <=10):
     print("You typed right:", Value)
-else:print('Wrong plz type a valid range of numbers')'''
+else:print('Wrong plz type a valid range of numbers')
 
 print("1. Red")
 print("2. orange")
@@ -53,7 +63,7 @@ print("4. Green")
 print("5. Blue")
 print("6. Purple")
 
-"""Choice=int(input("Select your favrt color:"))
+Choice=int(input("Select your favrt color:"))
 if (Choice==1):
     print("You have chose Red")
 elif(Choice==2):
@@ -66,7 +76,7 @@ elif(Choice==5):
     print("you have chose Blue")
 elif(Choice==6):
     print("you have chose Purple")
-else:print("You made an invalid choice!")"""
+else:print("You made an invalid choice!")
 
 a=9
 b=10
@@ -74,22 +84,10 @@ a,b=b,a     # by this we can swap variable in python
 print(a)
 print(b)
 
-'''print("1. HMT")
-print("2. QMR")
-print("3. BAT")
-print("4. LAL")
-print("5. DAL")
-station=int(input("From this station :"))
-
-if(station ==1):
-    print("You are traveling from HMT and fare is 10rs")
-elif(station ==2):
-    print("you are traveling from QMR and fare is 8rs")
-else:print("We are not servicing yet from this station")'''
-
+### Simple Metro Ticketing app cde###
 
 # Define a dictionary to map station names to their distances from a reference point (e.g., the starting station)
-'''station_distances = {
+station_distances = {
     "QMR": 0,
     "BMT": 2,
     "LAL": 4,
@@ -121,5 +119,6 @@ station_to = input("Enter the destination station: ")
 # Calculate the price of the ticket
 ticket_price = calculate_ticket_price(station_from, station_to)
 
-print(f"The ticket price from {station_from} to {station_to} is: {ticket_price} Rs.")'''
+print(f"The ticket price from {station_from} to {station_to} is: {ticket_price} Rs.")
+print("Happy Journey")
 
